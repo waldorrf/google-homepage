@@ -1,59 +1,224 @@
 <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0px;
+
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css>
+html {
+    min-height:100%;
+    position:relative;
+
 }
-li{
-    display:inline;
-}   
-#navup{
+nav,header,footer {
+    display: block;
+    margin:0;
+
+}
+body {
+    line-height: 1;
+    margin: 0;
+    overflow-x: hidden;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+}
+nav {
+    width: 100%;
+    margin: 0;
+}
+nav ul{
+    overflow:hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav.navup li {
+    list-style: none;
+    float: left;
+}
+
+ul.navup li.navuptopright {
     float:right;
 }
-a{text-decoration: none;}
-a:hover{text-decoration: underline;}
+
+ul.navup li a{
+    display: block;
+    text-decoration: none;
+    min-height: 13px;
+    color: rgba(0,0,0,0.87);
+    padding:14px;
+}
+
+ul.navup li a:hover{
+    text-decoration: underline;
+    color: rgba(0,0,0,0.87);
+}
+.container1{
+    width:100%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+   
+
+}
+.container2 {
+    width:100%;
+    margin:auto;
+    display:flex;
+    height: 90px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    margin: auto;
+    padding:0 16px;
+}
+
+.formatobotones{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center
+}
 
 
+.logo{
+    margin-top: 15vh;
+    padding: 20px;
+}
+
+.input{
+    width: 482px;
+    height: 44px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+}
+
+div.ofrecido{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: #222;
+    line-height: 28px;
+}
+
+div.argentina{
+    display:block;
+    padding: 15px 30px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+}
+
+footer {
+    width: 100%;
+    margin: 0;
+}
+footer ul{
+    border-top: 1px solid #dadce0;
+    background-color: #f2f2f2;
+    overflow:hidden;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #f2f2f2;
+    clear:both;
+    list-style: none;
+}
+ul.navbot li.navbotleft{
+    float: left;
+}  
+ul.navbot li.navbotright {
+    float: right;
+}
+ul.navbot li a{
+    display: block;
+    text-decoration: none;
+    min-height: 13px;
+    color: #70757a;
+    padding: 12px;
+}
+ul.navbot li a:hover{
+    text-decoration: underline;
+    color: #70757a;
+}
 
 </style>
-
 
 <!DOCTYPE html>
 <html>
     <head>
         <title>Google</title>
     </head>
-
-    <body>
-        <ul id="navup" >
-        <li><a href="#gmail">Gmail</a></li>
-        <li><a href="#imagenes">Imágenes</a></li>
+    <body> 
+    <nav>
+        <div>
+        <ul class="navup">
+        <li class="navuptopright"><a href="#imagenes">Imágenes</a></li>
+        <li class="navuptopright"><a href="#gmail">Gmail</a></li>
         </ul>
+        </div>
+    </nav>
+    <div class="container1">
+        <div class="logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        </div>
+
+        <div class="searchbox">
+                    <input class="input">
+        </div>
+    </div>
 
 
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-        <form action="">
-            <input>
-          </form>
+
+    <div class="container2">
+        <div class="botones">
+                <button class="formatobotones">Buscar con Google</button>
+                <button class="formatobotones">Me siento con suerte</button>
+        </div>
+    </div>
+
+    
+    <div class="ofrecido">
+        <p>Ofrecido por Google en: English Deutsch</p>
+    </div>
 
 
-
-
-
-
-Buscar con Google
-Me siento con suerte
-Ofrecido por Google en: English
-Argentina
-<ul id="navbot">
-    <li><a href="#sobregoogle">Sobre Google</a></li>
-    <li><a href="#publicidad">Publicidad</a></li</li>
-    <li><a href="#negocios">Negocios</a></li</li>
-    <li><a href="#comofuncionalabusqueda">Cómo funciona la búsqueda</a></li</li>
-    <li><a href="#privacidad">Privacidad</a></li</li>
-    <li><a href="#condiciones">Condiciones</a></li</li>
-    <li><a href="#preferencias">Preferencias</a></li</li>  
-</ul>
-
+    <div class="Argentina">Argentina
+    </div>
+    <footer>
+        <ul class="navbot">
+        <li class="navbotleft"><a href="#sobregoogle">Sobre Google</a></li>
+        <li class="navbotleft"><a href="#publicidad">Publicidad</a></li>
+        <li class="navbotleft"><a href="#negocios">Negocios</a></li>
+        <li class="navbotleft"><a href="#comofuncionalabusqueda">Cómo funciona la búsqueda</a></li>
+        <li class="navbotright"><a href="#preferencias">Preferencias</a></li>  
+        <li class="navbotright"><a href="#condiciones">Condiciones</a></li>
+        <li class="navbotright"><a href="#privacidad">Privacidad</a></li>
+        </ul>
+    </footer>
     </body>
 </html>
