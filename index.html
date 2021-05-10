@@ -90,9 +90,22 @@ ul.navup li a:hover{
     line-height: 27px;
     height: 36px;
     min-width: 54px;
-    text-align: center
+    text-align: center;
+    cursor: pointer;
+
 }
 
+.formatobotones:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.formatobotones:focus {
+    border: 1px solid #4d90fe;
+    outline: none;
+}
 
 .logo{
     margin-top: 15vh;
@@ -113,6 +126,17 @@ div.ofrecido{
     font-size: 13px;
     color: #222;
     line-height: 28px;
+}
+
+.enlaces{
+    color: #1a0dab;
+    text-decoration: underline;
+    padding: 0 3px;
+
+}
+.enlaces:active{
+    color: #1a0dab;
+    text-decoration: underline;
 }
 
 div.argentina{
@@ -165,7 +189,6 @@ ul.navbot li a:hover{
     text-decoration: underline;
     color: #70757a;
 }
-
 </style>
 
 <!DOCTYPE html>
@@ -201,9 +224,11 @@ ul.navbot li a:hover{
         </div>
     </div>
 
+
+
     
     <div class="ofrecido">
-        <p>Ofrecido por Google en: English Deutsch</p>
+        <p>Ofrecido por Google en: <a class="enlaces" href="https://www.google.com/">English</a> <a class="enlaces" href="https://www.google.com/?hl=de">Deutsch</a></p>
     </div>
 
 
